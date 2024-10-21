@@ -58,7 +58,7 @@ public class ball : MonoBehaviour
 
 
    //Function for launch the ball in a randomly direction, first I put the ball on (0,0,0)
-   //Then I calculate a random direction and then I launch the ball
+   //Then I calculate a random direction and then the ball is launched
 
     private IEnumerator Launch()
     {

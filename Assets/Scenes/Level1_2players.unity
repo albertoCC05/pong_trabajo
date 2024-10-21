@@ -1809,14 +1809,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4572637a153e91468720a48099def75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsToWin: 10
   score1: {fileID: 624836659}
   score2: {fileID: 1701388570}
+  namePlayer1: {fileID: 1399385023}
+  namePlayer2: {fileID: 45321359}
   winPanel1: {fileID: 869875583}
   winPanel2: {fileID: 1345788642}
   player1WinText: {fileID: 2095197740}
   player2WinText: {fileID: 2135623122}
-  namePlayer1: {fileID: 1399385023}
-  namePlayer2: {fileID: 45321359}
 --- !u!4 &1220990165
 Transform:
   m_ObjectHideFlags: 0

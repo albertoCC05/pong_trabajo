@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private int points1;
     private int points2;
 
+    [SerializeField] private int pointsToWin;
+
     //Ui references
 
     //Game Ui
@@ -86,7 +88,7 @@ public class GameManager : MonoBehaviour
         points1++;
         score1.text = $"{points1}";
 
-        if (points1 == 2)
+        if (points1 == pointsToWin)
         {
             ShowWinPanel1();
             player1WinText.text = $"{persistance.name1} Win";
@@ -98,7 +100,7 @@ public class GameManager : MonoBehaviour
         score2.text = $"{points2}";
 
 
-        if (points2 == 2)
+        if (points2 == pointsToWin)
         {
             ShowWinPanel2();
             player2WinText.text = $"{persistance.name2} Win";

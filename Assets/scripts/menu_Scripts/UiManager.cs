@@ -10,8 +10,9 @@ public class UiManager : MonoBehaviour
 {
     //Reference for the inputField
 
-    public GameObject player1Name;
-    public GameObject player2Name;
+    [SerializeField] private TMP_InputField player1Name;
+    [SerializeField] private TMP_InputField player2Name;
+    
 
     //Script reference
 
@@ -26,14 +27,14 @@ public class UiManager : MonoBehaviour
 
     public string GetName1()
     {
-        string name1 = player1Name.GetComponent<TMP_InputField>().text;
+        string name1 = player1Name.text;
         return name1;
        
     }
     public string GetName2()
     {
        
-        string name2 = player2Name.GetComponent<TMP_InputField>().text;
+        string name2 = player2Name.text;
         return name2;
 
 
